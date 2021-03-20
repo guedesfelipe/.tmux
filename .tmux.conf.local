@@ -22,6 +22,12 @@
 #   - false (default)
 tmux_conf_new_window_retain_current_path=false
 
+# bind to synchronize panes ctrl+a ctr+s
+bind -n C-s set-window-option synchronize-panes
+
+# bind key to show git status
+bind g send-keys 'git status' Enter
+
 # new pane retains current path, possible values are:
 #   - true (default)
 #   - false
